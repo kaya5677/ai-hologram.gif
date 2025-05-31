@@ -1,0 +1,27 @@
+
+body {
+  margin: 0;
+  background: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: cyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.hologram-container {
+  text-align: center;
+  margin-top: 40px;
+}
+.hologram-ai {
+  text-align: center;
+  animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px cyan;
+  }
+  to {
+    text-shadow: 0 0 20px cyan, 0 0 30px cyan;
+  }
+}
