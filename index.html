@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaya Assistant — Loading</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: #00ffe0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .hologram {
+      width: 220px;
+      height: auto;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 20px #00ffffcc);
+      animation: pulse 3s infinite ease-in-out;
+    }
+
+    .loading-text {
+      font-size: 1.2em;
+      letter-spacing: 2px;
+      animation: blink 1s step-end infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0.2; }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.05);
+        opacity: 0.75;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="assets/img/ai-hologram.gif" alt="Kaya Hologram" class="hologram" />
+  <div class="loading-text">Initializing Kaya Assistant...</div>
+
+</body>
+</html>
